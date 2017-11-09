@@ -189,6 +189,7 @@
     <Compile Include="Models\RemoteDesktop\RemoteDesktopSessionInfo.cs" />
     <Compile Include="Models\Settings\RemoteDesktopSessionManager.cs" />
     <Compile Include="Models\Settings\RemoteDesktopSessionInfo.cs" />
+    <Compile Include="ViewModels\Applications\WiFiViewModel.cs" />
     <Compile Include="ViewModels\Applications\ARPTableViewModel.cs" />
     <Compile Include="ViewModels\Dialogs\PortScannerProfileViewModel.cs" />
     <Compile Include="ViewModels\Dialogs\WakeOnLANClientViewModel.cs" />
@@ -220,6 +221,9 @@
     <Compile Include="ViewModels\Settings\SettingsApplicationWakeOnLANViewModel.cs" />
     <Compile Include="Controls\RemoteDesktopControl.xaml.cs">
       <DependentUpon>RemoteDesktopControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Applications\WiFiView.xaml.cs">
+      <DependentUpon>WiFiView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Applications\ARPTableView.xaml.cs">
       <DependentUpon>ARPTableView.xaml</DependentUpon>
@@ -330,6 +334,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\RemoteDesktopControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Applications\WiFiView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

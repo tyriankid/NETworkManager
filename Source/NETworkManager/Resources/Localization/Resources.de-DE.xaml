@@ -381,19 +381,21 @@
     <system:String x:Key="String_ValidateError_EnterValidValueBetween10and100">Geben Sie einen gültigen Wert ein zwischen 10 und 100!</system:String>
     <system:String x:Key="String_ValidateError_EnterValidIPAddress">Geben Sie eine gültige IP-Adresse ein!</system:String>
     <system:String x:Key="String_ValidateError_EnterValidSubnet">Geben Sie ein gültiges Subnetz ein (z.B. 192.168.178.133/26)</system:String>
-    
+
     <!-- ApplicationInfo.Name -->
-    <system:String x:Key="String_ApplicationName_IPScanner">IP-Scanner</system:String>
     <system:String x:Key="String_ApplicationName_NetworkInterface">Netzwerkinterface</system:String>
+    <system:String x:Key="String_ApplicationName_IPScanner">IP-Scanner</system:String>
     <system:String x:Key="String_ApplicationName_PortScanner">Port-Scanner</system:String>
-    <system:String x:Key="String_ApplicationName_SubnetCalculator">Subnetz-Rechner</system:String>
-    <system:String x:Key="String_ApplicationName_WakeOnLAN">Wake on LAN</system:String>
     <system:String x:Key="String_ApplicationName_Ping">Ping</system:String>
     <system:String x:Key="String_ApplicationName_Traceroute">Traceroute</system:String>
     <system:String x:Key="String_ApplicationName_DNSLookup">DNS Lookup</system:String>
     <system:String x:Key="String_ApplicationName_RemoteDesktop">Remote Desktop</system:String>
+    <system:String x:Key="String_ApplicationName_WiFi">WLAN</system:String>
+    <system:String x:Key="String_ApplicationName_WakeOnLAN">Wake on LAN</system:String>
+    <system:String x:Key="String_ApplicationName_SubnetCalculator">Subnetz-Rechner</system:String>
     <system:String x:Key="String_ApplicationName_ARPTable">ARP-Tabelle</system:String>
     <system:String x:Key="String_ApplicationName_Wiki">Wiki</system:String>
+    
 
     <!-- SettingsView.Name -->
     <system:String x:Key="String_SettingsName_General">Allgemein</system:String>

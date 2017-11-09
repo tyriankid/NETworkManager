@@ -355,6 +355,7 @@ namespace NETworkManager
         TracerouteView tracerouteView;
         DNSLookupView dnsLookupView;
         RemoteDesktopView remoteDesktopView;
+        WiFiView wifiView;
         WakeOnLANView wakeOnLANView;
         SubnetCalculatorView subnetCalculatorView;
         ARPTableView arpTableView;
@@ -416,6 +417,12 @@ namespace NETworkManager
                         wakeOnLANView = new WakeOnLANView();
 
                     contentControlApplication.Content = wakeOnLANView;
+                    break;
+                case ApplicationViewManager.Name.WiFi:
+                    if (wifiView == null)
+                        wifiView = new WiFiView();
+
+                    contentControlApplication.Content = wifiView;
                     break;
                 case ApplicationViewManager.Name.SubnetCalculator:
                     if (subnetCalculatorView == null)
