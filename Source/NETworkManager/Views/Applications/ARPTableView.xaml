@@ -56,6 +56,15 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
+                    <MenuItem Header="{DynamicResource String_Delete}" Command="{Binding DeleteCommand}">
+                        <MenuItem.Icon>
+                            <Rectangle Width="16" Height="16" Fill="{DynamicResource BlackColorBrush}">
+                                <Rectangle.OpacityMask>
+                                    <VisualBrush Stretch="Uniform" Visual="{IconPacks:PackIconMaterial Kind=Close}" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </ContextMenu>
             </DataGrid.Resources>
             <DataGrid.RowStyle>
@@ -73,7 +82,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Command="{Binding ClearCacheCommand}" IsDefault="True" Style="{StaticResource ImageWithTextButton}">
+            <Button Command="{Binding ClearCacheCommand}" Style="{StaticResource ImageWithTextButton}">
                 <Button.Content>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -89,7 +98,23 @@
                     </Grid>
                 </Button.Content>
             </Button>
-            <Button Command="{Binding RefreshCommand}" IsDefault="True" Style="{StaticResource ImageWithTextButton}" Margin="10,0,0,0">
+            <Button Command="{Binding DeleteCommand}" Style="{StaticResource ImageWithTextButton}" Margin="10,0,0,0">
+                <Button.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Width="20" Height="20" Fill="{DynamicResource GrayBrush3}" Margin="10,5,0,5">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Uniform" Visual="{IconPacks:PackIconMaterial Kind=Close}" />
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                        <TextBlock Grid.Column="1" Text="{DynamicResource String_Button_Delete}" Style="{StaticResource DefaultTextBlock}" TextAlignment="Center" Margin="10,5" />
+                    </Grid>
+                </Button.Content>
+            </Button>
+            <Button Command="{Binding RefreshCommand}" Style="{StaticResource ImageWithTextButton}" Margin="10,0,0,0">
                 <Button.Content>
                     <Grid>
                         <Grid.ColumnDefinitions>

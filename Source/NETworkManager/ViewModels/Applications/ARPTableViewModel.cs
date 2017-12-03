@@ -138,6 +138,16 @@ namespace NETworkManager.ViewModels.Applications
             Refresh();
         }
 
+        public ICommand DeleteCommand
+        {
+            get { return new RelayCommand(p => DeleteAction()); }
+        }
+
+        private void DeleteAction()
+        {
+            
+        }
+
         public ICommand ClearCacheCommand
         {
             get { return new RelayCommand(p => ClearCacheAction()); }
